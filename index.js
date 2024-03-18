@@ -22,3 +22,5 @@ const server = new SMTPServer({
         stream.on('end', callback);
     }
 })
+
+server.listen(25, () => console.log('SMTP server started on port 25'));
